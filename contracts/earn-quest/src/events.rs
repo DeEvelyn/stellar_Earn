@@ -478,6 +478,21 @@ pub fn verifier_stake_slashed(env: &Env, quest_id: Symbol, verifier: Address, sl
     env.events().publish(topics, data);
 }
 
+/// Emitted when a verifier's stake is returned to them after a quest completes
+/// without a dispute (or the dispute was resolved in their favour).
+///
+/// # Indexing Benefits
+/// * Track stake return by quest
+/// * Monitor verifier fund recoveries
+/// * Reconcile staked vs. returned capital off-chain
+pub fn verifier_stake_returned(env: &Env, quest_id: Symbol, verifier: Address, amount: u128) {
+    // Topics: [EventName, QuestID, Verifier] — all indexed for off-chain queries
+    let topics = (symbol_short!("vstk_ret"), quest_id, verifier);
+    // Data: returned amount for reconciliation
+    let data = (amount,);
+    env.events().publish(topics, data);
+}
+
 /// Emitted when the minimum creator level threshold is changed.
 pub fn min_creator_level_set(env: &Env, caller: Address, level: u32) {
     let topics = (symbol_short!("mn_cr_lvl"), caller);
