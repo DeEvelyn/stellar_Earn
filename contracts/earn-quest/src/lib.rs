@@ -1227,6 +1227,24 @@ impl EarnQuestContract {
         storage::get_quest(&env, &quest_id)
     }
 
+    /// Returns the remaining claim capacity for a quest id (Issue #2365).
+    ///
+    /// The remaining capacity is calculated as `MAX_QUEST_CLAIMS.saturating_sub(quest.total_claims)`.
+    /// Returns an error if the quest does not exist.
+    ///
+    /// # Arguments
+    ///
+    /// * `env` - The environment.
+    /// * `quest_id` - The symbol of the quest.
+    ///
+    /// # Returns
+    ///
+    /// A `Result<u32, Error>` containing the remaining claims allowed.
+    pub fn get_remaining_claim_capacity(env: Env, quest_id: Symbol) -> Result<u32, Error> {
+        let quest = storage::get_quest(&env, &quest_id)?;
+        Ok(validation::MAX_QUEST_CLAIMS.saturating_sub(quest.total_claims))
+    }
+
     /// Returns the submission details for a specific user and quest.
     ///
     /// # Arguments
