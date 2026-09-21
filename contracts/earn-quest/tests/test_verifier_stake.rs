@@ -260,7 +260,10 @@ fn test_return_verifier_stake_emits_event() {
 
     // Topic 2: verifier address
     let t_verifier: Address = topics.get(2).unwrap().into_val(&ctx.env);
-    assert_eq!(t_verifier, verifier, "wrong verifier address in event topics");
+    assert_eq!(
+        t_verifier, verifier,
+        "wrong verifier address in event topics"
+    );
 
     // Data: (amount,) — the full returned stake amount
     let (returned_amount,): (u128,) = data.into_val(&ctx.env);
