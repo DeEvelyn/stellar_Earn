@@ -6,6 +6,10 @@ and this module adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+### Added
+
+- Added complete OpenAPI / Swagger documentation to `AdminController` endpoints (`/admin/users`, `/admin/users/:id`, `/admin/stats`) including `@ApiTags`, `@ApiBearerAuth`, `@ApiOperation`, `@ApiParam`, and `@ApiResponse` status codes (200, 400, 401, 403, 404). Documented query parameters on `GetUsersQueryDto` with `@ApiPropertyOptional`. Closes #2367.
+
 ### Changed
 
 - Split the monolithic `admin.module.ts` into separate `admin.controller.ts`, `admin.service.ts`, and `admin.module.ts` files, matching the file-per-concern layout used by the other modules. No behavior change. Closes #1907.
