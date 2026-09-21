@@ -488,7 +488,15 @@ pub fn return_verifier_stake(
     if amount > 0 {
         let token_client = token::Client::new(env, &stake.token);
         match token_client.try_transfer(&env.current_contract_address(), verifier, &amount) {
-            Ok(Ok(_)) => Ok(()),
+            Ok(Ok(_)) => {
+                events::verifier_stake_returned(
+                    env,
+                    quest_id.clone(),
+                    verifier.clone(),
+                    stake.amount,
+                );
+                Ok(())
+            }
             _ => Err(Error::TransferFailed),
         }
     } else {
