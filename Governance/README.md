@@ -27,6 +27,7 @@ governance change is limited to files inside this `Governance/` folder.
 - **Finance** â€” treasury, grants, sponsorship, and transparency reporting.
 - **Records & templates** â€” decision logs, meeting minutes, ADRs, and reusable
   templates.
+- **Archival Policy** â€” guidelines for archiving superseded governance documents.
 
 ## How to contribute to governance
 
@@ -37,5 +38,5 @@ governance change is limited to files inside this `Governance/` folder.
    process documented here.
 
 > Status: this folder is being populated document-by-document. Individual
-> documents are tracked as governance issues; this index is updated as each one
-> lands.
+documents are tracked as governance issues; this index is updated as each one
+lands.
