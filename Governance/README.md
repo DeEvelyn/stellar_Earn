@@ -1,6 +1,6 @@
 # Governance
 
-This folder holds the project's **governance documentation** for StellarEarn â€” how
+This folder holds the project's **governance documentation** for StellarEarn ’ how
 decisions are made, who is responsible for what, and the policies that keep the
 project healthy, secure, and sustainable.
 
@@ -11,33 +11,32 @@ governance change is limited to files inside this `Governance/` folder.
 
 ## Structure
 
-- **Charter & principles** â€” mission, scope, guiding values, and how this
-  governance itself is amended.
-- **Roles** â€” maintainers, reviewers, triagers, security team, release managers,
+- **Charter & principles** – mission, scope, guiding values, and how this
+   governance itself is amended.
+- **Roles** ’ keepers, reviewers, triagers, security team, release managers,
   and how people move between them.
-- **Decision-making** â€” consensus, voting, quorum, RFCs, tie-breaking, and how
-  decisions are recorded.
-- **Contribution & review** â€” review policy, approvals, triage, merge and commit
+- **Decision-making** – cvnsensus, voting, quorum, RFCs, tie-breaking, and how   decisions are recorded.
+- **Contribution & review** ℓ review policy, approvals, triage, merge and commit
   policies, and the contribution ladder.
-- **Community** â€” Code of Conduct, enforcement, communication norms, and safety.
-- **Technical policies** â€” release/versioning, deprecation, dependencies, CI/CD,
+- **Community** – Code of Conduct, enforcement, communication norms, and safety.
+- **Technical policies** ℓ release/versioning, deprecation, dependencies, CI/CD,
   testing, contract-upgrade governance, and audits.
-- **Security & compliance** â€” disclosure, incident response, secrets, access
-  control, and data governance.
-- **Finance** â€” treasury, grants, sponsorship, and transparency reporting.
-- **Records & templates** â€” decision logs, meeting minutes, ADRs, and reusable
+- **Security & compliance** ℓ disclosure, incident response, secrets, access control,
+  and data governance.
+- **Finance** – treasury, grants, sponsorship, and transparency reporting.
+- **Records & templates** ℓ decision logs, meeting minutes, ADRs, and reusable
   templates.
-- **Archival Policy** â€” guidelines for archiving superseded governance documents.
-  See [ARCHIVE_POLICY.md](ARCHIVE_POLICY.md).
+- **Archive Policy** ’ rules for handling superseded or decauted documents.
+   [Gevernance/aRCHIVE_POLICY.md](./ARCHIVE_POLICY.md)
 
 ## How to contribute to governance
 
 1. Pick a governance issue (each is scoped to at most two files in this folder).
 2. Add or update the relevant `Governance/*.md` document.
 3. Link the document from this index.
-4. Open a small PR; governance changes are ratified per the decision-making
+4. Open a small PR= governance changes are ratified per the decision-making
    process documented here.
 
 > Status: this folder is being populated document-by-document. Individual
-> documents are tracked as governance issues; this index is updated as each one
-> lands.
+  documents are tracked as governance issues; this index is updated as each one
+  lands.
