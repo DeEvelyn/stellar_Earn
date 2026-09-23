@@ -2,46 +2,37 @@
 
 ## Purpose
 
-This document defines the policy for archiving superseded or deprecated governance
-documents. The goal is to maintain a clean, navigable documentation structure
-while preserving historical context for auditability and reference.
+This document defines the policy for archiving deprecated or superseded governance documents within the Governance/ folder. This ensures historical context is preserved while keeping the active documentation clear and current.
 
 ## Scope
 
-This policy applies to all Markdown files within the `Governance/` directory
-that are marked as deprecated, superseded, or no longer actively maintained.
+This policy applies to all Markdown files within the Governance/ directory that are part of the official project governance structure.
+
+## Archival Criteria
+
+A governance document should be archived when:
+
+1. It has been explicitly superseded by a new document (e.g., a new Charter or updated Roles definition).
+2. It is no longer relevant to current project operations.
+3. It is referenced as "historical" or "deprecated" in the active documentation.
 
 ## Archival Process
 
-1. **Deprecation**: When a governance document is superseded by a new version,
-   the original document should be marked as deprecated. This is typically done
-   by adding a deprecation notice at the top of the file and updating the
-   `Governance/README.md` to point to the new document.
+1. **Deprecation Notice**: Before archiving, the active document that replaces the old one must include a link to the archived version in a "History" or "Previous Versions" Section.
+2. **Renaming**: The archived file should be renamed with a .archived.md suffix (e.g., Charter.archived.md).
+3. **Header Update**: Add a deprecation banner at the top of the archived file:
 
-2. **Archival Location**: Deprecated documents are not deleted. Instead, they
-   are moved to the `Governance/archive/` directory. If the directory does not
-   exist, it should be created.
+   ``markdown
+   > **Deprecated**: This document has been archived. See [Current Document](./CurrentDocument.md) for the active policy.
+  ` ``
+4. **Index Update**: Ensure the README.md no longer links to the archived file directly, but may reference it in a historical context if needed.
 
-3. **Naming Convention**: Archived files should retain their original filename
-   but be prefixed with the date of archival in `YYYY-MM-DD-` format to ensure
-   chronological ordering and uniqueness. For example:
-   `Governance/archive/2023-10-27-old-policy.md`
+## Archive Location
 
-4. **Link Updates**: The `Governance/README.md` index must be updated to remove
-   links to archived documents and ensure that any internal links within other
-   active governance documents are updated to point to the current active
-   documents.
+Archived files remain in the Governance/ folder but are excluded from active navigation. They are not moved to a separate directory to maintain a single source of truth for governance history.
 
-## Maintenance
+## Review
 
-- Archival is performed as part of the pull request that introduces the
-  superseding document.
-- No automated archival is currently in place; this is a manual process
-  enforced by code review.
-- Archived documents are considered read-only and should not be modified
-  unless correcting critical errors in historical record.
-
-## References
-
-- [Governance README](../README.md)
-- [Decision-Making Process](./decision-making.md)
+Archival changes follow the same governance review process as new documents:
+- Scoped to a maximum of two files (the archived file and the README or replacing document.)
+- Reviewed and approved by the relevant governance body.
