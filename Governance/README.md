@@ -15,6 +15,8 @@ governance change is limited to files inside this `Governance/` folder.
   governance itself is amended.
 - **Subproject acceptance** - [SUBPROJECT_ACCEPTANCE.md](SUBPROJECT_ACCEPTANCE.md)
   defines how new subprojects are proposed, incubated, and accepted.
+- **Maintainers roster** - [MAINTAINERS.md](MAINTAINERS.md) lists current
+  maintainers, their areas, and how the roster is updated.
 - **Roles** â€” maintainers, reviewers, triagers, security team, release managers,
   and how people move between them.
 - **Decision-making** â€” consensus, voting, quorum, RFCs, tie-breaking, and how
@@ -29,6 +31,8 @@ governance change is limited to files inside this `Governance/` folder.
 - **Finance** â€” treasury, grants, sponsorship, and transparency reporting.
 - **Records & templates** â€” decision logs, meeting minutes, ADRs, and reusable
   templates.
+- **Archival Policy** â€” [ARCHIVE_POLICY.md](ARCHIVE_POLICY.md) defines how superseded
+  documents are archived and stored.
 
 ## How to contribute to governance
 
