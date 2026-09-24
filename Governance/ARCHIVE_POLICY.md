@@ -1,22 +1,27 @@
 ## Governance Document Archival Policy
 
 ### Purpose
-This document defines the policy for archiving superseded or deprecated governance documents to maintain clarity and prevent confusion while preserving historical context.
+This document defines the policy for archiving superseded or deprecated governance documents to maintain clarity and historical integrity.
 
 ### Archival Criteria
 A governance document should be archived when:
-1. It has been explicitly superseded by a new document.
-2. It is no longer relevant to current project operations.
-3. It is referenced as "deprecated" in the parent document.
+1. It is explicitly superseded by a new document.
+2. It is deprecated and no longer relevant to current operations.
+3. It is part of a historical record that is no longer actively maintained.
 
 ### Archival Process
-1. **Deprecation Notice**: The document must be marked as deprecated in its header with a link to the replacement document.
-2. **Renaming**: Rename the file by prepending `ARCHIVED_` to the filename (e.g., `ARCHIVED_OLD_POLICY.md`).
-3. **Index Update**: Update the `README.md` to remove the link to the active document and optionally add a note in an "Archived Documents" section if necessary.
+1. **Deprecation Notice**: The original document must include a clear notice stating it is deprecated and linking to the replacement or archival location.
+2. **Move to Archive**: The document is moved to the `Governance/archive/` directory.
+3. **Update Index**: The `Governance/README.md` is updated to remove the document from the active list and optionally link to the archive if historical reference is needed.
 
 ### Archive Location
-Archived documents remain in the `Governance/` folder but are prefixed with `ARCHIVED_`. They are not moved to a separate directory to maintain a single source of truth for governance history.
+Archived documents are stored in the `Governance/archive/` directory.
+
+### Naming Convention
+Archived files should retain their original name but be prefixed with the date of archival in `YYYY-MM-DD-` format to ensure chronological ordering and uniqueness.
+
+Example: `2023-10-01-old-policy.md`
 
 ### Maintenance
-- Regular reviews should be conducted to identify documents eligible for archival.
-- Archived documents must not be deleted; they serve as a historical record.
+- Archives are reviewed annually to ensure no active documents are mistakenly archived.
+- No automated deletion of archived documents is performed; they are retained for historical reference.
