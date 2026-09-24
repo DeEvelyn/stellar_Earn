@@ -13,6 +13,8 @@ governance change is limited to files inside this `Governance/` folder.
 
 - **Charter & principles** â€” mission, scope, guiding values, and how this
   governance itself is amended.
+- **RFC template** - [templates/RFC_TEMPLATE.md](templates/RFC_TEMPLATE.md) is
+  the reusable template for writing RFC proposals, with a status field.
 - **Roles** â€” maintainers, reviewers, triagers, security team, release managers,
   and how people move between them.
 - **Decision-making** â€” consensus, voting, quorum, RFCs, tie-breaking, and how
