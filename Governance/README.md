@@ -25,8 +25,8 @@ governance change is limited to files inside this `Governance/` folder.
 - **Security & compliance** â€” disclosure, incident response, secrets, access
   control, and data governance.
 - **Finance** â€” treasury, grants, sponsorship, and transparency reporting.
-- **Records & templates** â€” decision logs, meeting minutes, ADRs, and reusable
-  templates.
+- **Records & templates** â€” decision logs, [meeting minutes](meetings/README.md),
+  ADRs, and reusable templates.
 
 ## How to contribute to governance
 
