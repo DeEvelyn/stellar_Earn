@@ -13,6 +13,8 @@ governance change is limited to files inside this `Governance/` folder.
 
 - **Charter & principles** â€” mission, scope, guiding values, and how this
   governance itself is amended.
+- **Subproject acceptance** - [SUBPROJECT_ACCEPTANCE.md](SUBPROJECT_ACCEPTANCE.md)
+  defines how new subprojects are proposed, incubated, and accepted.
 - **Maintainers roster** - [MAINTAINERS.md](MAINTAINERS.md) lists current
   maintainers, their areas, and how the roster is updated.
 - **Roles** â€” maintainers, reviewers, triagers, security team, release managers,
